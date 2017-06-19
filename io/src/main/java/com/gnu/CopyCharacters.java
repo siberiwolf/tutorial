@@ -1,23 +1,20 @@
 package com.gnu;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
 
 /**
- * Copy file byte by byte
+ * copy file character by character
  * @author xuejiawei@lohogames.com on 2017-06-19
  */
-public class CopyBytes {
+public class CopyCharacters {
     public static void main(String[] args) throws Exception {
-        String dir = System.getProperty("user.dir");
-        System.out.println(String.format("current execute dictionary %s", dir));
-
-        FileInputStream in = null;
-        FileOutputStream out = null;
+        FileReader in = null;
+        FileWriter out = null;
 
         try {
-            in = new FileInputStream("hello.txt");
-            out = new FileOutputStream("copy.txt");
+            in = new FileReader("hello.txt");
+            out = new FileWriter("copy.txt");
             int c;
 
             while ((c = in.read()) != -1) {
