@@ -1,4 +1,4 @@
-package com.gnu;
+package com.gnu.io;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

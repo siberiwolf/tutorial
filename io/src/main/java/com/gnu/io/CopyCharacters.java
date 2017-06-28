@@ -1,4 +1,4 @@
-package com.gnu;
+package com.gnu.io;
 
 import java.io.FileReader;
 import java.io.FileWriter;

@@ -1,1 +1,2 @@
-Welcome to gnu world!
+First line is aaa.
+Second line is bbb.
