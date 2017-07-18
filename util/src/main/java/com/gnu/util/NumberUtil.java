@@ -3,7 +3,7 @@ package com.gnu.util;
 /**
  * @author xuejiawei@lohogames.com on 2017-06-28
  */
-public class Utils {
+public class NumberUtil {
     /**
      * 判断一个数是否为2的n次幂
      * @param num
