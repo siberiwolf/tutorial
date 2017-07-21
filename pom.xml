@@ -16,6 +16,7 @@
         <module>util</module>
         <module>mem</module>
         <module>exception</module>
+        <module>concurrent</module>
     </modules>
 
     <properties>
