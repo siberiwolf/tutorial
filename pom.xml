@@ -17,6 +17,7 @@
         <module>mem</module>
         <module>exception</module>
         <module>concurrent</module>
+        <module>string</module>
     </modules>
 
     <properties>
