@@ -2,7 +2,6 @@ package com.gnu.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.GregorianCalendar;
 import java.util.TimeZone;
 
 /**
@@ -13,9 +12,11 @@ public class TimeUtil {
 
     /**
      * 判断两个时间戳是否处于同一天
-     * @param timestamp1    时间戳1
-     * @param timestamp2    时间戳2
-     * @return true处于同一天,false不处于同一天
+     *
+     * @param timestamp1 时间戳1
+     * @param timestamp2 时间戳2
+     *
+     * @return true处于同一天, false不处于同一天
      */
     public static boolean checkSameDay(long timestamp1, long timestamp2) {
         // 根据timestamp1计算出那天0点的时间戳，判断timestamp2 > 0点时间戳 + 24 * 60 * 60 * 1000

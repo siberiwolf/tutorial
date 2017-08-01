@@ -7,6 +7,7 @@ import java.util.concurrent.BlockingQueue;
 
 /**
  * 一个byte一个字节, src的大小是1024024字节(通过java visualVM获得)
+ *
  * @author xuejiawei@lohogames.com on 2017-07-05
  */
 public class ByteArray {

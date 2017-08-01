@@ -6,8 +6,10 @@ package com.gnu.util;
 public class NumberUtil {
     /**
      * 判断一个数是否为2的n次幂
+     *
      * @param num
-     * @return  num是2的n次幂, 返回true
+     *
+     * @return num是2的n次幂, 返回true
      */
     public static boolean powerOf2(int num) {
         return (num & (num - 1)) == 0;
@@ -15,8 +17,10 @@ public class NumberUtil {
 
     /**
      * 计算大于等于num的最小的2的n次幂
+     *
      * @param num
-     * @return  大于等于num的最小的2的n次幂
+     *
+     * @return 大于等于num的最小的2的n次幂
      */
     public static int nextPowerOf2(int num) {
         int n = num - 1;

@@ -1,9 +1,13 @@
 package com.gnu.io;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 
 /**
  * copy file line by line
+ *
  * @author xuejiawei@lohogames.com on 2017-06-20
  */
 public class CopyLines {
@@ -16,7 +20,7 @@ public class CopyLines {
             out = new PrintWriter(new FileWriter("copy.txt"));
             String str;
 
-            while ((str =(in.readLine())) != null) {
+            while ((str = (in.readLine())) != null) {
                 out.println(str);
             }
         } finally {
