@@ -5,7 +5,7 @@ import java.util.Calendar;
 import java.util.TimeZone;
 
 /**
- * @author xuejiawei@lohogames.com on 2017-07-18
+ * @author siberiwolf@hotmail.com on 2017-07-18
  */
 public class TimeUtil {
     private static final long DAILY_MILLISECONDS = 24 * 60 * 60 * 1000;
@@ -15,7 +15,6 @@ public class TimeUtil {
      *
      * @param timestamp1 时间戳1
      * @param timestamp2 时间戳2
-     *
      * @return true处于同一天, false不处于同一天
      */
     public static boolean checkSameDay(long timestamp1, long timestamp2) {

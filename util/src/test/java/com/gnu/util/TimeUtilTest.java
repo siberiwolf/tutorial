@@ -2,10 +2,10 @@ package com.gnu.util;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
- * Created by xuejiawei on 2017/7/18.
+ * Created by siberiwolf@hotmail.com on 2017/7/18.
  */
 public class TimeUtilTest {
     @Test

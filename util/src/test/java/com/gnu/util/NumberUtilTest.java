@@ -2,10 +2,10 @@ package com.gnu.util;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
- * Created by xuejiawei on 2017/6/28.
+ * Created by siberiwolf@hotmail.com on 2017/6/28.
  */
 public class NumberUtilTest {
     @Test

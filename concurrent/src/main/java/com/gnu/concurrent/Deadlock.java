@@ -13,7 +13,7 @@ package com.gnu.concurrent;
  * waiting to lock monitor 0x0000000057485a68 (object 0x00000000d61b0d30, a java.lang.Object),
  * which is held by "Thread-2"
  *
- * @author xuejiawei@lohogames.com on 2017-07-21
+ * @author siberiwolf@hotmail.com on 2017-07-21
  */
 public class Deadlock {
     public static void main(String[] args) {

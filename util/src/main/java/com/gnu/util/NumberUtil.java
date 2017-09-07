@@ -1,14 +1,13 @@
 package com.gnu.util;
 
 /**
- * @author xuejiawei@lohogames.com on 2017-06-28
+ * @author siberiwolf@hotmail.com on 2017-06-28
  */
 public class NumberUtil {
     /**
      * 判断一个数是否为2的n次幂
      *
      * @param num
-     *
      * @return num是2的n次幂, 返回true
      */
     public static boolean powerOf2(int num) {
@@ -19,7 +18,6 @@ public class NumberUtil {
      * 计算大于等于num的最小的2的n次幂
      *
      * @param num
-     *
      * @return 大于等于num的最小的2的n次幂
      */
     public static int nextPowerOf2(int num) {

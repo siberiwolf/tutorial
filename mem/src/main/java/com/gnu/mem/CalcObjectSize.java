@@ -3,7 +3,7 @@ package com.gnu.mem;
 /**
  * This class written from http://www.javaworld.com/article/2077496/testing-debugging/java-tip-130--do-you-know-your-data-size-.html
  *
- * @author xuejiawei@lohogames.com on 2017-07-06
+ * @author siberiwolf@hotmail.com on 2017-07-06
  */
 public class CalcObjectSize {
     private static final Runtime s_runtime = Runtime.getRuntime();
@@ -43,9 +43,9 @@ public class CalcObjectSize {
 
         final int size = Math.round(((float) (heap2 - heap1)) / count);
         System.out.println("'before' heap: " + heap1 +
-                           ", 'after' heap: " + heap2);
+                ", 'after' heap: " + heap2);
         System.out.println("heap delta: " + (heap2 - heap1) +
-                           ", {" + objects[0].getClass() + "} size = " + size + " bytes");
+                ", {" + objects[0].getClass() + "} size = " + size + " bytes");
         for (int i = 0; i < count; ++i) {
             objects[i] = null;
         }

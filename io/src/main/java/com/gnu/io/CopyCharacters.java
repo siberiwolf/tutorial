@@ -6,7 +6,7 @@ import java.io.FileWriter;
 /**
  * copy file character by character
  *
- * @author xuejiawei@lohogames.com on 2017-06-19
+ * @author siberiwolf@hotmail.com on 2017-06-19
  */
 public class CopyCharacters {
     public static void main(String[] args) throws Exception {

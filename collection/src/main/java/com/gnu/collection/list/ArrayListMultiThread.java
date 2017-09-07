@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * @author xuejiawei@lohogames.com on 2017-07-18
+ * @author siberiwolf@hotmail.com on 2017-07-18
  */
 public class ArrayListMultiThread {
     public static void main(String[] args)

@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 /**
  * copy file line by line
  *
- * @author xuejiawei@lohogames.com on 2017-06-20
+ * @author siberiwolf@hotmail.com on 2017-06-20
  */
 public class CopyLines {
     public static void main(String[] args) throws Exception {
