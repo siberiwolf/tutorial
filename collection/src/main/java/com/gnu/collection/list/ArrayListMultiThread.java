@@ -13,7 +13,7 @@ public class ArrayListMultiThread {
     public static void main(String[] args)
             throws InterruptedException {
         AtomicInteger finishedThreadNum = new AtomicInteger(0);
-        int threadNum = 50000;
+        int threadNum = 500;
 
         List<Integer> list = new ArrayList<>();
 
@@ -29,7 +29,7 @@ public class ArrayListMultiThread {
         }
 
         while (finishedThreadNum.get() < threadNum) {
-            Thread.sleep(100);
+            Thread.yield();
         }
         System.out.println(list.size());
         Gson gson = new Gson();
