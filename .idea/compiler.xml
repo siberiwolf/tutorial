@@ -11,6 +11,7 @@
         <module name="exception" />
         <module name="io" />
         <module name="mem" />
+        <module name="nio" />
         <module name="string" />
         <module name="util" />
       </profile>
@@ -21,6 +22,7 @@
       <module name="exception" target="1.8" />
       <module name="io" target="1.8" />
       <module name="mem" target="1.8" />
+      <module name="nio" target="1.8" />
       <module name="string" target="1.8" />
       <module name="tutorial" target="1.8" />
       <module name="util" target="1.8" />

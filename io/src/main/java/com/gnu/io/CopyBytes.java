@@ -17,8 +17,8 @@ public class CopyBytes {
         FileOutputStream out = null;
 
         try {
-            in = new FileInputStream("hello.txt");
-            out = new FileOutputStream("copy.txt");
+            in = new FileInputStream("io\\src\\main\\resources\\hello.txt");
+            out = new FileOutputStream("io\\src\\main\\resources\\copy.txt");
             int c;
 
             while ((c = in.read()) != -1) {
