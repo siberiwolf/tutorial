@@ -4,7 +4,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
 /**
- * 使用Channel和Buffer读取文件内容，可以和com.gun.io.CopyBytes比较
+ * 使用Channel和Buffer拷贝文件内容，可以和com.gun.io.CopyBytes比较
  *
  * @author siberiwolf@hotmail.com on 2017/9/10
  */
