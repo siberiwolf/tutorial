@@ -1,4 +1,4 @@
-package com.gnu.io.nio;
+package com.gnu.io.nio.echo;
 
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
@@ -13,14 +13,20 @@ import java.util.Set;
 /**
  * @author siberiwolf@hotmail.com on 2017/9/11
  */
-public class EchoServer {
+public class NioEchoServer {
     public static void main(String[] args) throws Exception {
+        int port = 8080;
+
+        if (args != null && args.length > 0) {
+            port = Integer.parseInt(args[0]);
+        }
+
         Selector selector = Selector.open();
 
         ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
         serverSocketChannel.configureBlocking(false);
         ServerSocket serverSocket = serverSocketChannel.socket();
-        InetSocketAddress address = new InetSocketAddress(8007);
+        InetSocketAddress address = new InetSocketAddress(port);
         serverSocket.bind(address);
 
         serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
