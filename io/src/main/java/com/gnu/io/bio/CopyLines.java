@@ -1,4 +1,4 @@
-package com.gnu.io;
+package com.gnu.io.bio;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

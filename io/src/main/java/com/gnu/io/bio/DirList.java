@@ -1,4 +1,4 @@
-package com.gnu.io;
+package com.gnu.io.bio;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
  */
 public class DirList {
     public static void main(String[] args) {
-        if (args == null || args.length == 0) {
+        if (args.length == 0) {
             System.out.println("Useage java class [dir] [filterPattern]");
             return;
         }
@@ -22,7 +22,7 @@ public class DirList {
             return;
         }
 
-        String[] list = null;
+        String[] list;
         if (args.length < 2) {
             list = dir.list();
         } else {
@@ -34,8 +34,10 @@ public class DirList {
             });
         }
 
-        for (String item : list) {
-            System.out.println(item);
+        if (list != null) {
+            for (String item : list) {
+                System.out.println(item);
+            }
         }
     }
 }

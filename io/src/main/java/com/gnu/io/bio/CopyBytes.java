@@ -1,4 +1,4 @@
-package com.gnu.io;
+package com.gnu.io.bio;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
