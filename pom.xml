@@ -21,6 +21,7 @@
         <module>nio</module>
         <module>nio</module>
         <module>nio</module>
+        <module>algorithm</module>
     </modules>
 
     <properties>
