@@ -18,9 +18,6 @@
         <module>exception</module>
         <module>concurrent</module>
         <module>string</module>
-        <module>nio</module>
-        <module>nio</module>
-        <module>nio</module>
         <module>algorithm</module>
     </modules>
 
