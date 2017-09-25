@@ -19,6 +19,8 @@
         <module>concurrent</module>
         <module>string</module>
         <module>algorithm</module>
+        <module>reflection</module>
+        <module>annotation</module>
     </modules>
 
     <properties>
