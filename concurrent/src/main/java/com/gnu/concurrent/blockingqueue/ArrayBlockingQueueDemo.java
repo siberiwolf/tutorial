@@ -1,20 +1,16 @@
-package com.gnu.collection.blockingQueue;
+package com.gnu.concurrent.blockingqueue;
 
+import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
 /**
- * optionally-bounded阻塞队列, based on linked node
- *
+ * 有界阻塞队列, based on array
  * @author siberiwolf@hotmail.com on 2017/9/21
  */
-public class LinkedBlockingQueueDemo {
+public class ArrayBlockingQueueDemo {
     public static void main(String[] args) throws Exception {
-        // unbounded
-        BlockingQueue<Integer> queue = new LinkedBlockingQueue<>();
-        // bounded
-//        BlockingQueue<Integer> queue = new LinkedBlockingQueue<>(16);
+        BlockingQueue<Integer> queue = new ArrayBlockingQueue<Integer>(16);
 
         for (int i = 0; i < 5; i++) {
             final int id = i;
@@ -22,6 +18,10 @@ public class LinkedBlockingQueueDemo {
                 @Override
                 public void run() {
                     for (int j = 0; j < 4; j++) {
+                        // offer return false when queue is full
+//                        queue.offer(id * 4 + j);
+
+                        // put will waiting for ever when queue is full
                         try {
                             queue.put(id * 4 + j);
                         } catch (InterruptedException e) {
@@ -41,6 +41,8 @@ public class LinkedBlockingQueueDemo {
                 System.out.println("Consumer is interrupted");
                 break;
             }
+            // take will waiting for ever or throw InterruptedException
+//            Integer item = queue.take();
             // poll will waiting for special time or return null when timeout or throw InterruptedException
             Integer item = queue.poll(3, TimeUnit.SECONDS);
             if (item != null) {
