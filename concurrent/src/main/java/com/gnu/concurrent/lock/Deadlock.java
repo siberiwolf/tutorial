@@ -1,4 +1,4 @@
-package com.gnu.concurrent;
+package com.gnu.concurrent.lock;
 
 /**
  * create deadlock
