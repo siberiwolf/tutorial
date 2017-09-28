@@ -13,6 +13,7 @@
         <module name="exception" />
         <module name="io" />
         <module name="mem" />
+        <module name="number" />
         <module name="reflection" />
         <module name="string" />
         <module name="util" />
@@ -27,6 +28,7 @@
       <module name="io" target="1.8" />
       <module name="mem" target="1.8" />
       <module name="nio" target="1.8" />
+      <module name="number" target="1.8" />
       <module name="reflection" target="1.8" />
       <module name="string" target="1.8" />
       <module name="tutorial" target="1.8" />
