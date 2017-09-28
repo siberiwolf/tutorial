@@ -21,6 +21,7 @@
         <module>algorithm</module>
         <module>reflection</module>
         <module>annotation</module>
+        <module>number</module>
     </modules>
 
     <properties>
