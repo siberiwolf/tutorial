@@ -30,7 +30,16 @@ public class NumberUtil {
         return n + 1;
     }
 
-    // TODO 位运算判断两个数相等
-    // 两次同样的位操作
-    // 50对相同的数，扔进去101个与其他都不同的，怎么找出来
+    // 50对相同的数，扔进去一个与其他都不同的，怎么找出来
+    // 关键点：异或操作 X^X=0；X^0=X；A^B^C=A^C^B(异或满足交换律)
+    // 50对相同的数异或的结果为0，再异或一个不同的，得到的结果就是那个不同的
+    public static int findDiff() {
+        int[] array = {1, 2, 3, 4, 1, 3, 2, 5, 6, 6, 5};
+        int diff = 0;
+        for (int i = 0; i < array.length; i++) {
+            diff ^= array[i];
+        }
+        return diff;
+    }
+
 }

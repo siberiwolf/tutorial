@@ -10,6 +10,7 @@
         <module name="annotation" />
         <module name="collection" />
         <module name="concurrent" />
+        <module name="design" />
         <module name="exception" />
         <module name="io" />
         <module name="mem" />
@@ -24,6 +25,7 @@
       <module name="annotation" target="1.8" />
       <module name="collection" target="1.8" />
       <module name="concurrent" target="1.8" />
+      <module name="design" target="1.8" />
       <module name="exception" target="1.8" />
       <module name="io" target="1.8" />
       <module name="mem" target="1.8" />

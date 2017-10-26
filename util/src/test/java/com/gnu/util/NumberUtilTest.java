@@ -29,4 +29,11 @@ public class NumberUtilTest {
         assertEquals(32, result);
     }
 
+    @Test
+    public void findDiff() {
+        int result = NumberUtil.findDiff();
+        assertEquals(4, result);
+
+    }
+
 }
