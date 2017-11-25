@@ -4,7 +4,7 @@ package com.gnu.collection.tree;
  * @author siberiwolf@hotmail.com on 2017/11/21
  */
 public class BinaryTree {
-    private Node root;
+    Node root;
 
     public BinaryTree() {
         this.root = null;
@@ -52,20 +52,24 @@ public class BinaryTree {
              /   \
             4    5
          */
-        System.out.print("Inorder traversal : ");
+        System.out.print("Depth inorder traversal : ");
         DepthTraversal.inorderTraversal(tree.root);
         System.out.print("\n");
 
-        System.out.print("Preorder traversal : ");
+        System.out.print("Depth preorder traversal : ");
         DepthTraversal.preorderTraversal(tree.root);
         System.out.print("\n");
 
-        System.out.print("Postorder traversal : ");
+        System.out.print("Depth postorder traversal : ");
         DepthTraversal.postorderTraversal(tree.root);
         System.out.print("\n");
 
-        System.out.print("Level traversal : ");
-        LevelTraversal.traversal(tree.root);
+        System.out.print("Level traversal with queue : ");
+        LevelTraversal.traversalWithQueue(tree.root);
+        System.out.print("\n");
+
+        System.out.print("Level traversal with recursion : ");
+        LevelTraversal.traversalWithRecursion(tree);
         System.out.print("\n");
     }
 }
