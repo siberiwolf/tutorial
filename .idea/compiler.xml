@@ -29,7 +29,6 @@
       <module name="exception" target="1.8" />
       <module name="io" target="1.8" />
       <module name="mem" target="1.8" />
-      <module name="nio" target="1.8" />
       <module name="number" target="1.8" />
       <module name="reflection" target="1.8" />
       <module name="string" target="1.8" />
